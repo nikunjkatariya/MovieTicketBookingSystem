@@ -1,0 +1,17 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.userprefs
+
+# Rider
+.idea/
+*.sln.iml
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
