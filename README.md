@@ -16,6 +16,25 @@ A production-grade multithreaded movie ticket booking system in **.NET 8** (C#),
 
 ---
 
+## 📈 Performance Benchmarks
+
+Simulation: 210 concurrent users per movie, with randomized latency (100ms–500ms)
+
+| Max Concurrency | Booking Time (ms) |
+| --------------- | ----------------- |
+| 20              | 9515.1068         |
+| 50              | 4146.79           |
+| 100             | 2126.3542         |
+| 200             | 1306.4848         |
+
+Latency simulation was introduced using:
+
+```csharp
+await Task.Delay(Random.Shared.Next(100, 500));
+```
+
+---
+
 ## 🛠️ Technologies Used
 
 * **.NET 8 / C#**
